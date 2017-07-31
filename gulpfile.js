@@ -9,7 +9,7 @@ gulp.task('script', function(){
 	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'assets/js/*.js'])
 		.pipe(concat('script.js'))
 		.pipe(gulp.dest('dist/js/'));
-});
+})
 
 gulp.task('style', function(){
 	gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css', 'assets/sass/main.scss'])
@@ -20,13 +20,13 @@ gulp.task('style', function(){
 });
 
 gulp.task('webserver', function(){
-	gulp.src('../pinterest')
+	gulp.src('../pinterest/')
 		.pipe(webserver({
 			fallback: 'index.html',
 			livereload: true,
 			directoryListing: false,
-			open: true,
-			port:8001
+			open: true
+			
 		}));
 });
 

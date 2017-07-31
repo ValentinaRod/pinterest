@@ -1,15 +1,19 @@
-$(document).(ready(){
+$(document).ready(function(){
+		
 		for(var i =0; i <20 ; i++){
-		var img=$('<img>').attr('src', 'dis/img' + data[i].image_url);
+		
+		var img=$('<img>').attr('src', 'dist/img/' + data[i].image_url);
+		
 		var cards=$('<div class="cards" data-toggle="modal" data-target="#myModal">');
+
 		var titulo=$('<h4>').attr('class', "title");
 		titulo.text(data[i].title);
-		var descripcion=$('<p>').atrr('class','descripciones');
+		var descripcion=$('<p>').attr('class','descripciones');
 		descripcion.text(data[i].description);
-		var divUsuario=$('<div>').atrr('class', 'user_uno');
+		var divUsuario=$('<div>').attr('class', 'user_uno');
 		var user=$('<p class="user">').append('<p><i class="fa fa-user-circle" aria-hidden="true"></i>'
 					+data[i].username + '</p>');
-
+		console.log(data[i].username);
 		var hashtag = $('<p class="hashtag">').text('#' + data[i].hashtag);
 
 		var modaltop ='<div class="modal"><div><i class="fa fa-upload" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div><button class="btn-guardar"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>';
@@ -26,6 +30,8 @@ $(document).(ready(){
 							+ modaltop 
 							+ modalbottom
 							+'</div></div></div></div>');
+
+
 		divUsuario.append(user);
 		divUsuario.append(hashtag);
 
@@ -37,19 +43,20 @@ $(document).(ready(){
 $('.pint_info').append(cards);
 $('.pint_info').append(modal);
 
+console.log(data[i].username);
 
 }	
 
 	$(window).scroll(function() {
 	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
 	       for(i ; i < 40 ; i++){
-			var img=$('<img>').attr('src', 'dis/img' + data[i].image_url);
+			var img=$('<img>').attr('src', 'dist/img/' + data[i].image_url);
 			var cards=$('<div class="cards">');
 			var titulo=$('<h4>').attr('class', "title");
 			titulo.text(data[i].title);
-			var descripcion=$('<p>').atrr('class','descripciones');
+			var descripcion=$('<p>').attr('class','descripciones');
 				descripcion.text(data[i].description);
-			var divUsuario=$('<p>').atrr('class', 'user_uno');
+			var divUsuario=$('<p>').attr('class', 'user_uno');
 			var user=$('<p>').text(data[i].username);
 			var hashtag = $('<p class="hashtag">').text('#' + data[i].hashtag);
 			var hashtag = $('<p>').text('#' + data[i].hashtag);
