@@ -1,22 +1,36 @@
 header{
-	border-bottom: 1px solid $colorplomoOsucro;
+	border-bottom: 1px solid $colorplomoOscuro;
 }
 
 
-.navbar_logo{
-		a{
-		 	color:$colorplomo;
-	}
-		&:focus, 
-		&:hover{
-		color: $colorplomo;
-		list-style:none;
-		text-decoration:none;
-	}
-		
+#navbar_logo{
+ width:55px;
+ 		a{
+ 			color:$colorplomo;
+ 			text-decoration:none;
+ 			&:hover{
+ 			color:$colorplomo;
+ 			}
+ 	}
+
+}
+
+#perfil{
+	width:30px;
+}	
+
+.form-control{
+	margin-left:-100px;
+	width:100px;
+	
 }
 
 
+img{
+	width: 250px;
+	height: auto;
+	border-radius: 10px;
+}
 
 
 
