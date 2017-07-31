@@ -1,0 +1,22 @@
+header{
+	border-bottom: 1px solid $colorplomoOsucro;
+}
+
+
+.navbar_logo{
+		a{
+		 	color:$colorplomo;
+	}
+		&:focus, 
+		&:hover{
+		color: $colorplomo;
+		list-style:none;
+		text-decoration:none;
+	}
+		
+}
+
+
+
+
+
