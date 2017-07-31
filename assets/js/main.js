@@ -47,6 +47,24 @@ $('.pint_info').append(modal);
 			var cards=$('<div class="cards">');
 			var titulo=$('<h4>').attr('class', "title");
 			titulo.text(data[i].title);
+			var descripcion=$('<p>').atrr('class','descripciones');
+				descripcion.text(data[i].description);
+			var divUsuario=$('<p>').atrr('class', 'user_uno');
+			var user=$('<p>').text(data[i].username);
+			var hashtag = $('<p class="hashtag">').text('#' + data[i].hashtag);
+			var hashtag = $('<p>').text('#' + data[i].hashtag);
+			divUsuario.append(user);
+			divUsuario.append(hashtag);
 
+			cards.append(img);
+			cards.append(titulo);
+			cards.append(descripcion);
+			cards.append(divUsuario);
+			
+$('.pint_info').append(cards);
+			}
+			i = 50;
+	   }
+});
 
 });
