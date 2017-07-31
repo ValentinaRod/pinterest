@@ -12680,8 +12680,8 @@ $(document).(ready(){
 		cards.append(descripcion);
 		cards.append(divUsuario);
 
-$('.pint_info').append(cards);
-$('.pint_info').append(modal);
+$('pint_info').append(cards);
+$('pint_info').append(modal);
 
 
 }	
@@ -12707,7 +12707,7 @@ $('.pint_info').append(modal);
 			cards.append(descripcion);
 			cards.append(divUsuario);
 			
-$('.pint_info').append(cards);
+$('pint_info').append(cards);
 			}
 			i = 50;
 	   }
