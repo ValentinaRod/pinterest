@@ -12650,9 +12650,9 @@ var contador=0;
 $(document).ready(function(){
 		for (var i=0; i<20; i++){
 		console.log(data[i].title);
-	$('.pint').append('<div class="pin col-md-12" type="button" data-toggle="modal" data-target="#myModal'
+	$('.pint').append('<div class="pinter_rest col-md-12" type="button" data-toggle="modal" data-target="#myModal'
 							+data[i].id+'"><img class="img-responsive img-rounded" src="dist/img/'
-							+data[i].image_url+'"><p class="contder"><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6k <i class="fa fa-check" aria-hidden="true"></i> 6</p><h4>'
+							+data[i].image_url+'"><p class="cont_img"><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6k <i class="fa fa-check" aria-hidden="true"></i> 6</p><h4>'
 							+data[i].title+'</h4><h5>'
 							+data[i].description+'</h5><p><i class="fa fa-user-circle" aria-hidden="true"></i>'
 							+data[i].username+' #'
@@ -12679,9 +12679,9 @@ $(window).scroll(function() {
 	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
 	      for (var i=0; i<40; i++){
 		console.log(data[i].title);
-	$('.pint').append('<div class="pin col-md-12" type="button" data-toggle="modal" data-target="#myModal'
+	$('.pint').append('<div class="pinter_rest col-md-12" type="button" data-toggle="modal" data-target="#myModal'
 							+data[i].id+'"><img class="img-responsive img-rounded" src="dist/img/'
-							+data[i].image_url+'"><p class="contder"><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6k <i class="fa fa-check" aria-hidden="true"></i> 6</p><h4>'
+							+data[i].image_url+'"><p class="cont_img"><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6k <i class="fa fa-check" aria-hidden="true"></i> 6</p><h4>'
 							+data[i].title+'</h4><h5>'
 							+data[i].description+'</h5><p><i class="fa fa-user-circle" aria-hidden="true"></i>'
 							+data[i].username+' #'
@@ -12718,7 +12718,7 @@ $(window).scroll(function() {
 });
 
 
-
+//HACE QUE EN EL MODAL TODAS LAS IMAGENES SEAN LAS MISMAS DE LA IMAGEN 1 NO ME SIRVE.
 /*$(document).ready(function(){
 		
 		for(var i =0; i <20 ; i++){

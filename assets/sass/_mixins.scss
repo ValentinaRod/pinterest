@@ -1,0 +1,14 @@
+@mixin botones{
+	background-color: $colornegro;
+	opacity: 0.9;
+	text-decoration:none;
+	color: $colorblanco;
+	font-weight: bold;
+	width: 100px;
+	padding: 1px;
+	margin: 4px;
+	border-radius:5px;
+	text-align: center;
+	position:relative;
+	top: 2px;
+}

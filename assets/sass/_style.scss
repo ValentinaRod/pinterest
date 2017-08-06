@@ -33,8 +33,68 @@ img{
 }
 
 //columnas
+.btns{
+	display:flex;
+	justify-content: center;
+	margin: 30px;
+
+.btns__target1{
+	@include botones;
+	background-image: url(../../dist/img/1.jpg);
+}
+
+.btns__target2{
+	@include botones;
+	background-image: url(../../dist/img/2.jpg);
+}
+
+.btns__target3{
+	@include botones;
+	background-image: url(../../dist/img/3.jpg);
+}
+
+.btns__target4{
+	@include botones;
+	background-image: url(../../dist/img/4.jpg);
+}
+
+.btns__target5{
+	@include botones;
+	background-image: url(../../dist/img/5.jpg);
+}
+
+.btns__target6{
+	@include botones;
+	background-image: url(../../dist/img/6.jpg);
+}
+
+.btns__target7{
+	@include botones;
+	background-image: url(../../dist/img/7.jpg);
+}
+
+.btns__target8{
+	@include botones;
+	background-image: url(../../dist/img/8.jpg);
+}
+
+.btns__target9{
+	@include botones;
+	background-image: url(../../dist/img/9.jpg);
+}
+
+.btns__target10{
+	@include botones;
+	background-image: url(../../dist/img/1.jpg);
+}
+
+.btns__target11{
+	@include botones;
+	background-image: url(../../dist/img/1.jpg);
+}
 
 
+}
 .pint{
 	-webkit-column-count: 5;
 	-webkit-column-gap: 10px;
