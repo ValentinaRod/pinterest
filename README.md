@@ -1,3 +1,5 @@
+Requerimientos Técnicos
+
 El proyecto fue realizado con las siguientes dependencias NPM:
 
 Dependencias de Desarrollo
