@@ -7,6 +7,7 @@
 	<link rel="stylesheet"  href="dist/css/style.min.css">
 </head>
 <body>
+<!--aqui comienza el navbar barra de arriba-->
 <header class="navbar_header">
     <div class="container-fluid">
       <div class="row">
@@ -14,36 +15,31 @@
           <img id="navbar_logo" class="brand" src="dist/img/iconpint.png" width="55" alt="logo">
           <a class="waves-effect waves-light btn inicio">Inicio</a>
 
-        </div>
-        <div class="col-lg-6">
-          <form class="navbar-form navbar-left" role="search">
-  			<div class="form-group">
-				<input class="form-control" type="text" placeholder="Search" readonly><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-              <button type="submit" class="btn btn-default">Todos los pines<span class="caret"></span></button>
+        </div> <!--boton de iniciio con logo de pinterest-->
+        <!--input de search con botones y foto de perfil-->
+        <div class="col-lg-10">
+           <div id="search-form" class="search-form js-search-form">
+            <form class="form-search" role="search">
+                <div class="input-group">
+
+                    <input type="text" class="form-control" style="margin-top: 10px " placeholder="Search" />
+                    <span class="input-group-btn">
+                     <button type="submit" class="btn btn-default todoslospines" style="margin-top: 10px color:#B5B5B5;">Todos los pines<span class="caret"></span></button>
+                    <img  id="perfil" src="dist/img/imgperfil.jpg" alt="placeholder+image" class="img-circle" width="30" style="margin-top: 10px width=35px;">
+                    <a class="waves-effect waves-light btn" style="margin-top: 10px color:#B5B5B5;">Valentina</a>
+                    <a class="waves-effect waves-light btn" style="margin-top: 10px color:#B5B5B5;"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    <a class="waves-effect waves-light btn" style="margin-top: 10px color:#B5B5B5;"><i class="fa fa-comment" aria-hidden="true"  class="img-circle"></i>
+</i></a>
+              
+                    </span>
+                </div>
+              
           </form>
         </div>
-        
-      
-              <div class="col-lg-2">
-              	<img  id="perfil" src="dist/img/imgperfil.jpg" alt="placeholder+image" class="img-circle" width="30">
-                <a class="waves-effect waves-light btn">Valentina</a>
-              </div>
-              
-              <div class="col-lg-1 push-l1">
-                <a class="waves-effect waves-light btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
-              </div>
-          
-              <div class="col-lg-1 push-l1">
-                <a class="waves-effect waves-light btn"><i class="fa fa-comment" aria-hidden="true"  class="img-circle"></i>
-</i></a>
-              </div>
-          
         
       </div>
     </div>
 </header> <!--Aqui temrina el navbar-->
-<!------------------------------------------------------------------------>
 <!--aqui comienza las tarjetitas-->
 <section class="btns">
   <a href="#" class="btns__target1">Dress</a>

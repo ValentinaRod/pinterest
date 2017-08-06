@@ -1,29 +1,25 @@
 header{
 	border-bottom: 1px solid $colorplomoOscuro;
 }
-
-
-#navbar_logo{
- width:55px;
- 		a{
- 			color:$colorplomo;
- 			text-decoration:none;
- 			&:hover{
- 			color:$colorplomo;
- 			}
- 	}
+.navbar_header{
+	color: $colorplomo;
+	text-decoration:none;
 
 }
 
 #perfil{
 	width:30px;
-}	
-
-.form-control{
-	margin-left:-100px;
-	width:100px;
-	
 }
+
+#navbar_logo {
+  width: 55px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 
 img{
@@ -107,3 +103,20 @@ img{
 	column-fill: auto;
 }
 
+//arreglo descripciones de las tarjetas
+.cont_img{
+	float: right;
+	font-width: bold;
+	font-size: 16px; 
+}
+
+.fa-user-circle{
+	font-size:25px;
+	background-color: #F5A9A9;
+	margin:10px;
+}
+
+.btn-primary{
+	background-color: #DF0101;
+	float: right;
+}
